@@ -286,3 +286,9 @@ footer {
         grid-template-columns: 1fr;
     }
 } 
+
+.slider_wap{
+    padding: 10px 30px;
+    width: 100%;
+    margin: 0 20px;
+}
