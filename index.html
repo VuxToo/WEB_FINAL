@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Restaurant - Nhà hàng Nhật Bản</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Sakura</div>
+        <ul class="nav-links">
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#menu">Thực Đơn</a></li>
+            <li><a href="#booking">Đặt Bàn</a></li>
+            <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Chào mừng đến với Sakura</h1>
+            <p>Trải nghiệm ẩm thực Nhật Bản đích thực</p>
+            <a href="#menu" class="btn">Xem Thực Đơn</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Thực Đơn Nổi Bật</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Sushi tươi ngon với cá hồi, cá ngừ và các loại hải sản khác</p>
+                <span class="price">150.000đ</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sashimi">
+                <h3>Sashimi</h3>
+                <p>Cá sống thái lát mỏng, phục vụ với nước tương và wasabi</p>
+                <span class="price">200.000đ</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tempura">
+                <h3>Tempura</h3>
+                <p>Tôm và rau củ chiên giòn theo phong cách Nhật Bản</p>
+                <span class="price">120.000đ</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Ramen">
+                <h3>Ramen</h3>
+                <p>Mì ramen truyền thống với nước dùng đậm đà</p>
+                <span class="price">100.000đ</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2>Đặt Bàn</h2>
+        <form id="booking-form" class="booking-form">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Ngày:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Giờ:</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Số khách:</label>
+                <input type="number" id="guests" min="1" max="10" required>
+            </div>
+            <button type="submit" class="btn">Đặt Bàn</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Liên Hệ</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Đường ABC, Quận 1, TP.HCM</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+84 123 456 789</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@sakura.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <p>Mở cửa: 10:00 - 22:00 hàng ngày</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sakura Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
