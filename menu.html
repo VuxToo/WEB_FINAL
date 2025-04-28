@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Đơn - Sakura Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Sakura</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="menu.html" class="active">Thực Đơn</a></li>
+            <li><a href="index.html#booking">Đặt Bàn</a></li>
+            <li><a href="index.html#contact">Liên Hệ</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <header class="menu-header">
+        <h1>Thực Đơn</h1>
+        <p>Khám phá hương vị ẩm thực Nhật Bản đích thực</p>
+    </header>
+
+    <!-- Menu Categories -->
+    <div class="menu-categories">
+        <button class="category-btn active" data-category="all">Tất Cả</button>
+        <button class="category-btn" data-category="sushi">Sushi</button>
+        <button class="category-btn" data-category="sashimi">Sashimi</button>
+        <button class="category-btn" data-category="ramen">Mì Ramen</button>
+        <button class="category-btn" data-category="tempura">Tempura</button>
+        <button class="category-btn" data-category="drinks">Đồ Uống</button>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu-container">
+        <!-- Sushi Section -->
+        <section class="menu-section" id="sushi">
+            <h2>Sushi</h2>
+            <div class="swiper sushi-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Sushi Set">
+                            <div class="item-info">
+                                <h3>Sushi Set Deluxe</h3>
+                                <p>Bộ sưu tập sushi cao cấp với 12 miếng</p>
+                                <span class="price">450.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Salmon Sushi">
+                            <div class="item-info">
+                                <h3>Sushi Cá Hồi</h3>
+                                <p>Sushi cá hồi tươi ngon</p>
+                                <span class="price">180.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Tuna Sushi">
+                            <div class="item-info">
+                                <h3>Sushi Cá Ngừ</h3>
+                                <p>Sushi cá ngừ tươi ngon</p>
+                                <span class="price">200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="California Roll">
+                            <div class="item-info">
+                                <h3>California Roll</h3>
+                                <p>Cuộn sushi với cua, bơ và dưa leo</p>
+                                <span class="price">150.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- Sashimi Section -->
+        <section class="menu-section" id="sashimi">
+            <h2>Sashimi</h2>
+            <div class="swiper sashimi-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm1.jpg" alt="Sashimi Set">
+                            <div class="item-info">
+                                <h3>Sashimi Cá Hồi</h3>
+                                <p>Bộ sưu tập sashimi cao cấp</p>
+                                <span class="price">550.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm1.jpg" alt="Salmon Sashimi">
+                            <div class="item-info">
+                                <h3>Sashimi Cá Hồi</h3>
+                                <p>Cá hồi tươi thái lát mỏng</p>
+                                <span class="price">250.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm2.jpg" alt="Tuna Sashimi">
+                            <div class="item-info">
+                                <h3>Sashimi Cá Ngừ</h3>
+                                <p>Cá ngừ tươi thái lát mỏng</p>
+                                <span class="price">280.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm3.jpg" alt="Hamachi Sashimi">
+                            <div class="item-info">
+                                <h3>Sashimi Cá Cam</h3>
+                                <p>Cá cam Nhật Bản thái lát mỏng</p>
+                                <span class="price">320.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm4.jpg" alt="Octopus Sashimi">
+                            <div class="item-info">
+                                <h3>Sashimi Bạch Tuộc</h3>
+                                <p>Bạch tuộc tươi thái lát mỏng</p>
+                                <span class="price">290.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm5.jpg" alt="Scallop Sashimi">
+                            <div class="item-info">
+                                <h3>Sashimi Sò Điệp</h3>
+                                <p>Sò điệp tươi thái lát mỏng</p>
+                                <span class="price">340.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm6.jpg" alt="Uni Sashimi">
+                            <div class="item-info">
+                                <h3>Sashimi Nhím Biển</h3>
+                                <p>Nhím biển tươi cao cấp</p>
+                                <span class="price">480.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm7.jpg" alt="Deluxe Mix Sashimi">
+                            <div class="item-info">
+                                <h3>Sashimi Thập Cẩm Đặc Biệt</h3>
+                                <p>Tổng hợp các loại hải sản cao cấp</p>
+                                <span class="price">750.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm8.jpg" alt="Salmon Belly Sashimi">
+                            <div class="item-info">
+                                <h3>Sashimi Bụng Cá Hồi</h3>
+                                <p>Phần bụng cá hồi thượng hạng</p>
+                                <span class="price">380.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="./img/ssm9.jpg" alt="Toro Sashimi">
+                            <div class="item-info">
+                                <h3>Sashimi Toro</h3>
+                                <p>Phần bụng cá ngừ đại dương</p>
+                                <span class="price">620.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Ramen Section -->
+        <section class="menu-section" id="ramen">
+            <h2>Mì Ramen</h2>
+            <div class="swiper ramen-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Tonkotsu Ramen">
+                            <div class="item-info">
+                                <h3>Tonkotsu Ramen</h3>
+                                <p>Mì ramen nước dùng xương heo đậm đà</p>
+                                <span class="price">120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Shoyu Ramen">
+                            <div class="item-info">
+                                <h3>Shoyu Ramen</h3>
+                                <p>Mì ramen nước dùng xì dầu</p>
+                                <span class="price">110.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Miso Ramen">
+                            <div class="item-info">
+                                <h3>Miso Ramen</h3>
+                                <p>Mì ramen nước dùng miso</p>
+                                <span class="price">115.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Tempura Section -->
+        <section class="menu-section" id="tempura">
+            <h2>Tempura</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Tempura Set">
+                    <div class="item-info">
+                        <h3>Tempura Set</h3>
+                        <p>Tôm và rau củ chiên giòn</p>
+                        <span class="price">150.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Shrimp Tempura">
+                    <div class="item-info">
+                        <h3>Tempura Tôm</h3>
+                        <p>Tôm tươi chiên giòn</p>
+                        <span class="price">180.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Vegetable Tempura">
+                    <div class="item-info">
+                        <h3>Tempura Rau Củ</h3>
+                        <p>Rau củ tươi chiên giòn</p>
+                        <span class="price">120.000đ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks Section -->
+        <section class="menu-section" id="drinks">
+            <h2>Đồ Uống</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Sake">
+                    <div class="item-info">
+                        <h3>Sake Nhật Bản</h3>
+                        <p>Rượu sake truyền thống</p>
+                        <span class="price">200.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Matcha">
+                    <div class="item-info">
+                        <h3>Matcha Latte</h3>
+                        <p>Trà matcha truyền thống</p>
+                        <span class="price">80.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Umeshu">
+                    <div class="item-info">
+                        <h3>Umeshu</h3>
+                        <p>Rượu mơ Nhật Bản</p>
+                        <span class="price">150.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Green Tea">
+                    <div class="item-info">
+                        <h3>Trà Xanh Nhật Bản</h3>
+                        <p>Trà xanh cao cấp</p>
+                        <span class="price">60.000đ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sakura Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- Add Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper for Sushi section
+        const sushiSwiper = new Swiper('.sushi-swiper', {
+            effect: 'creative',
+            creativeEffect: {
+                prev: {
+                    translate: ['-120%', 0, -500],
+                },
+                next: {
+                    translate: ['120%', 0, -500],
+                },
+            },
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Initialize Swiper for Sashimi section
+        const sashimiSwiper = new Swiper('.sashimi-swiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Initialize Swiper for Ramen section
+        const ramenSwiper = new Swiper('.ramen-swiper', {
+            effect: 'cards',
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html> 
