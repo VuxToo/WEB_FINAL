@@ -18,8 +18,8 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: #fff;
-    padding: 1rem 5%;
+    background-color: rgba(3, 3, 67, 0.85);
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,8 @@ body {
 }
 
 .nav-links li a {
-    color: #333;
+    font-size: 1.2rem;
+    color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
@@ -166,7 +167,7 @@ body {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: rgba(3, 3, 67, 0.85);
     color: white;
     text-align: center;
     padding: 2rem;
