@@ -116,6 +116,27 @@ body {
     color: var(--text-color);
 }
 
+.booking-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+/* Đổi màu icon của input date và time thành trắng */
+.booking-form input[type="date"],
+.booking-form input[type="time"] {
+    color-scheme: white;
+}
+.booking-form input[type="date"]::-webkit-calendar-picker-indicator,
+.booking-form input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
 
 /* Footer */
 footer {
