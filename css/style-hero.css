@@ -1,4 +1,5 @@
 .hero {
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.pos365.vn/storage/app/media/2021/12/thiet-ke-nha-hang-nhat-ban/thiet-ke-nha-hang-nhat-ban-1-1.jpg');
     background-size: cover;
@@ -12,20 +13,21 @@
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 0;
 }
 
 .hero-content h1 span {
     color: var(--primary-color);
     line-height: 4rem;
-    font-size: 6rem;
+    font-size: 7rem;
+    font-weight: 700;
 }
 
 .hero-content .left div {
     margin-top: 20px;
-    width: 40%;
-    font-size: 1.2rem;
+    width: 100%;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
 }
 
@@ -35,8 +37,9 @@
     background: var(--primary-color);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background 0.3s;
+    font-size: 1.5rem;
 }
 
 .btn:hover {
