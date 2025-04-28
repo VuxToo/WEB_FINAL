@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakura Restaurant - Nhà hàng Nhật Bản</title>
+    <script src="https://kit.fontawesome.com/3f19084f92.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/style-hero.css">
+    <link rel="stylesheet" href="./css/style-address.css">
+    <link rel="stylesheet" href="./css/style-opentime.css">
+    <link rel="stylesheet" href="./css/style-contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
@@ -38,7 +42,8 @@
         <div class="hero-content">
             <div class="left">
                 <h1>Chào mừng đến với <br> <span>Sakura</span></h1>
-                <div>Nhà hàng Sakura mang đến trải nghiệm ẩm thực Nhật tinh tế với không gian truyền thống, thực đơn đa dạng và nguyên liệu tươi ngon, cùng đội ngũ phục vụ chuyên nghiệp và tận tâm.</div>
+                <div>Nhà hàng Sakura mang đến trải nghiệm ẩm thực Nhật tinh tế với không gian truyền thống, thực đơn đa
+                    dạng và nguyên liệu tươi ngon, cùng đội ngũ phục vụ chuyên nghiệp và tận tâm.</div>
                 <a href="#menu" class="btn">Xem Thực Đơn</a>
             </div>
         </div>
@@ -134,14 +139,34 @@
         </form>
     </section>
 
+    <!-- Address Section -->
+    <section id="address" class="address">
+        <div class="address-info">
+            <h2><i class="fas fa-map-marker-alt"></i> Địa Chỉ</h2>
+            <hr>
+            <p>123 Đường ABC, Quận 1, TP.HCM</p>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9999999999995!2d106.62999999999999!3d10.776999999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c5a5a5a5a5a%3A0x5a5a5a5a5a5a5a5a!2sSakura%20Restaurant!5e0!3m2!1svi!2s!4v1610000000000"
+                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Open time section -->
+    <section id="open-time" class="open-time">
+        <div class="time-left"><i class="fa-solid fa-utensils"></i></div>
+        <div class="time-right">
+            <h2><i class="fas fa-clock"></i> Giờ Mở Cửa</h2>
+            <hr>
+            <p>Thứ Hai - Thứ Sáu: 10:00 - 22:00</p>
+            <p>Thứ Bảy - Chủ Nhật: 09:00 - 23:00</p>
+        </div>
+    </section>
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Liên Hệ</h2>
         <div class="contact-info">
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>123 Đường ABC, Quận 1, TP.HCM</p>
-            </div>
             <div class="contact-item">
                 <i class="fas fa-phone"></i>
                 <p>+84 123 456 789</p>
@@ -151,36 +176,30 @@
                 <p>info@sakura.com</p>
             </div>
             <div class="contact-item">
-                <i class="fas fa-clock"></i>
-                <p>Mở cửa: 10:00 - 22:00 hàng ngày</p>
+                <i class="fa-brands fa-square-facebook"></i>
+                <p>@sakura_vn</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <p>@sakura_vn</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Sakura Restaurant. All rights reserved.</p>
+        <p>&copy; 2025 Sakura Restaurant. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="script.js"></script>
 
     <script>
-
-
-
-
-
-
-
-
-
         var splide = new Splide('.splide', {
             type: 'loop',
             perPage: 3,
             focus: 'center',
             autoplay: true,
         });
-
         splide.mount();
     </script>
 </body>
