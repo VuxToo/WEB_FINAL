@@ -24,7 +24,12 @@ burger.addEventListener('click', () => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        const offset = targetId === '#contact' ?  -720 : 0; 
+        
+        window.scrollTo({
+            top: targetElement.offsetTop + offset,
             behavior: 'smooth'
         });
     });

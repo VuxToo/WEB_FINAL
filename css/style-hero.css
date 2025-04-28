@@ -19,12 +19,13 @@
 .hero-content h1 span {
     color: var(--primary-color);
     line-height: 4rem;
-    font-size: 6rem;
+    font-size: 5rem;
+    font-weight: 700;
 }
 
 .hero-content .left div {
     margin-top: 20px;
-    width: 40%;
+    width: 100%;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
@@ -35,8 +36,9 @@
     background: var(--primary-color);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background 0.3s;
+    font-size: 1.2rem;
 }
 
 .btn:hover {
