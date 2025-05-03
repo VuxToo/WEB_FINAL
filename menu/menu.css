@@ -91,11 +91,18 @@ body {
 
 /* Category Buttons */
 .menu-categories {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 3rem;
+}
+.menu-categories ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 10px
 }
 
 .category-btn {
