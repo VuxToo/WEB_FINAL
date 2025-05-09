@@ -179,3 +179,12 @@
         padding: 0.3rem 0.4rem;
     }
 } 
+
+.nav-links.active{
+    border-top: 0.3px solid #e74c3c;
+    top: 4.4rem;
+    gap: 10px;
+    background-color: rgba(3, 3, 67, 0.7);
+    align-items: end;
+    padding: 20px 0px
+}
